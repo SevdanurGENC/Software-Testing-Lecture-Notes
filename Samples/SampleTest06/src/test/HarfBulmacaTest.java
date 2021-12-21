@@ -9,19 +9,19 @@ import main.HarfBulmaca;
 
 class HarfBulmacaTest {
 
-	 @Test
+		@Test
 	    public void testSesliHarfler() {
-	        HarfBulmaca ltrFnd = new HarfBulmaca();
-	        int donenSesli = ltrFnd.kacSesli("www.kilicmehmet.com");
+	        HarfBulmaca sesliBul = new HarfBulmaca();
+	        int donenSesli = sesliBul.kacSesli("www.sevdanurgenc.com");
 
 	        Assert.assertEquals(5, donenSesli); 
 	    }
 
 	    @Test
 	    public void testSessizHarfler() {
-	        HarfBulmaca ltrFnd = new HarfBulmaca();
-	        int donenSessiz = ltrFnd.kacSessiz("www.kilicmehmet.com");
-	        Assert.assertEquals(14, donenSessiz);
+	        HarfBulmaca sesliBul = new HarfBulmaca();
+	        int donenSessiz = sesliBul.kacSessiz("www.sevdanurgenc.com");
+	        Assert.assertEquals(15, donenSessiz);
 
 	    }
 
