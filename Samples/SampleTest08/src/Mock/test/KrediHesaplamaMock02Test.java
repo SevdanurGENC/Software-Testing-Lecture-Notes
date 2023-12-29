@@ -7,6 +7,9 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
+import org.mockito.MockitoAnnotations;
+import org.junit.jupiter.api.BeforeEach;
+
 
 import Mock.main.KrediHesaplama;
 import Mock.main.HesaplamaKayit;
@@ -18,6 +21,11 @@ class KrediHesaplamaMock02Test {
 	KrediHesaplama krediHesaplama;
 	@Mock
 	HesaplamaKayit HesaplamaKayit;
+	
+	@BeforeEach
+	void setUp() throws Exception {
+        MockitoAnnotations.initMocks(this);    
+	}
 	
 	@Test
 	public void faizHesaplamaTest(){
